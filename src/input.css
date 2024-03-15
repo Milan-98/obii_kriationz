@@ -14,10 +14,10 @@
   }
   /* Heading  we haven't gave anything to like break to heading so you have to specify where you use it */
   .heading {
-    @apply text-5xl font-bold xl:text-[54px];
+    @apply text-5xl font-bold xl:text-[54px] xl:leading-[50px];
   }
   .subHeading {
-    @apply text-4xl font-bold tracking-wide  xl:text-[46px];
+    @apply text-4xl font-bold tracking-wide  xl:text-[46px] xl:leading-[46px];
   }
   /* gradient */
   .gradient {

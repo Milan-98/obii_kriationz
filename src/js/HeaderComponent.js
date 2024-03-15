@@ -143,7 +143,12 @@ class HeaderComponent extends HTMLElement {
                     Our Capabilities
                   </li>
                   <li class="duration-300 hover:text-gold">ObiiBot</li>
-                  <li class="duration-300 hover:text-gold">Resources</li>
+                  <li
+                  id="LgResources"
+                  class="-mb-7 -ml-1 -mr-1 -mt-5 pb-7 pl-1 pr-1 pt-5 duration-300 hover:text-gold xl:-mb-10 xl:pb-10"
+                >
+                  Resources
+                </li>
                   <li
                     
                   >
@@ -309,7 +314,7 @@ class HeaderComponent extends HTMLElement {
                 </div>
                 <!-- ----------- (2) content div ---------------- -->
                 <ul class="mt-2 list-inside list-decimal text-xl font-light">
-                  <li class="duration-150 hover:opacity-50">Blogs</li>
+                  <li class="duration-150 hover:opacity-50"> <a href="./blogs.html">Blogs</a></li>
                   <li class="duration-150 hover:opacity-50">Brochures</li>
                 </ul>
               </div>

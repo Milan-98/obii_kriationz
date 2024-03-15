@@ -78,7 +78,16 @@ class LgScreenCapabilitiesDropdownComponent extends HTMLElement {
       <li class="duration-300 hover:text-gold">Cloud Adoption Services</li>
       <li class="duration-300 hover:text-gold">DevOps Services</li>
     </ul>
-  </nav>  `;
+  </nav>
+  <!-- ! Large screen dropdown of Resources -->
+  <ul
+    id="LgResourcesDropdown"
+    class="paddingX fixed right-0 top-[124px] z-40 hidden w-56 gap-3 rounded-sm bg-[#f2f2f2] p-5 font-light text-slightDark duration-300 xl:top-[140px] 2xl:right-[18%]"
+  >
+    <li class="duration-300 hover:text-gold"> <a href="./blogs.html"> Blogs</a></li>
+    <li class="duration-300 hover:text-gold">Brochures</li>
+  </ul>
+    `;
   }
 }
 customElements.define(

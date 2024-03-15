@@ -93,13 +93,17 @@
       LgDropdown.addEventListener("mouseenter", () => {
         LgDropdown.classList.remove("hidden");
         LgDropdown.classList.add("grid");
+        LgCapabilities.classList.remove("text-slightDark");
+        LgCapabilities.classList.add("text-gold");
       });
       LgDropdown.addEventListener("mouseleave", () => {
         LgDropdown.classList.add("hidden");
         LgDropdown.classList.remove("grid");
+        LgCapabilities.classList.remove("text-gold");
+        LgCapabilities.classList.add("text-slightDark");
       });
       document.addEventListener("scroll", () => {
-        console.log(pageYOffset);
+        
         if (pageYOffset > 32) {
           LgDropdown.classList.remove("top-[124px]");
           LgDropdown.classList.remove("xl:top-[140px]");
@@ -111,6 +115,45 @@
           LgDropdown.classList.add("xl:top-[140px]");
           LgDropdown.classList.remove("top-20");
           LgDropdown.classList.remove("xl:top-24");
+        }
+      });
+      // ----------------------------------------- for drop down of Resources ----------------------------- 
+      const LgResources = document.getElementById("LgResources");
+      const LgResourcesDropdown = document.getElementById(
+        "LgResourcesDropdown",
+      );
+      LgResources.addEventListener("mouseenter", () => {
+        LgResourcesDropdown.classList.remove("hidden");
+        LgResourcesDropdown.classList.add("grid");
+      });
+      LgResources.addEventListener("mouseleave", () => {
+        LgResourcesDropdown.classList.remove("grid");
+        LgResourcesDropdown.classList.add("hidden");
+      });
+      LgResourcesDropdown.addEventListener("mouseenter", () => {
+        LgResourcesDropdown.classList.remove("hidden");
+        LgResourcesDropdown.classList.add("grid");
+        LgResources.classList.remove("text-slightDark");
+        LgResources.classList.add("text-gold");
+      });
+      LgResourcesDropdown.addEventListener("mouseleave", () => {
+        LgResourcesDropdown.classList.remove("grid");
+        LgResourcesDropdown.classList.add("hidden");
+        LgResources.classList.remove("text-gold");
+        LgResources.classList.add("text-slightDark");
+      });
+      document.addEventListener("scroll", () => {
+        if (pageYOffset > 32) {
+          LgResourcesDropdown.classList.remove("top-[124px]");
+          LgResourcesDropdown.classList.remove("xl:top-[140px]");
+
+          LgResourcesDropdown.classList.add("top-20");
+          LgResourcesDropdown.classList.add("xl:top-24");
+        } else {
+          LgResourcesDropdown.classList.add("top-[124px]");
+          LgResourcesDropdown.classList.add("xl:top-[140px]");
+          LgResourcesDropdown.classList.remove("top-20");
+          LgResourcesDropdown.classList.remove("xl:top-24");
         }
       });
       //--------------------------- sending user onclick to home page from svg of obii header ----------------

@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <link rel="stylesheet" href="./output.css" />
+    <!-- Top Header -->
+    <script src="./js/HeaderComponent.js"></script>
+    <!-- Main Header -->
+    <script src="./js/TopHeader.js"></script>
+    <!-- footer -->
+    <script src="./js/FooterComponent.js"></script>
+    <!-- large-screen-capabilities-dropdown-component -->
+    <script src="./js/LgScreenCapabilitiesDropdownComponent.js"></script>
+  </head>
+  <body>
+    <!-- ! Top Header -->
+    <topheader-component></topheader-component>
+    <!-- ! Main Header -->
+    <header-component></header-component>
+    <!-- ! Large screen dropdown of our capabilities -->
+    <large-screen-capabilities-dropdown-component></large-screen-capabilities-dropdown-component>
+    <!-- ! main -->
+    <main>
+        <!-- mx -->
+        <section class="paddingX grid gap-16">
+         <!-- ? (1) Page indicator -->
+         <section class="grid gap-1 pt-8 tracking-wide">
+            <h1 class="text-lg font-bold text-transparentDark">INSIGHTS FROM OUR DESK - BLOGS, VLOGS AND MORE</h1>
+            <div
+              class="grid grid-flow-col items-center justify-start gap-2 text-xs font-light text-[#6c757d]"
+            >
+              <!-- 1 -->
+              <a href="./index.html" class="duration-300 hover:text-slightDark"
+                >Home</a
+              >
+              <!-- 2 -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="mr-1 w-3 rotate-180 fill-[#6c757d]"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m2.82 12l7.715 7.715q.22.222.218.53q-.003.307-.224.528t-.529.221q-.308 0-.529-.22L1.83 13.136q-.242-.243-.354-.54q-.112-.299-.112-.597t.112-.596q.112-.298.354-.54L9.47 3.22q.221-.221.532-.218q.31.003.532.224t.22.529q0 .307-.22.529z"
+                />
+              </svg>
+              <!-- 3 -->
+              Insights from our Desk - Blogs, Vlogs and More
+            </div>
+          </section>
+          <!-- ? (2)section of blogs -->
+          <section class="grid gap-8 sm:gap-10 md:gap-14 ">
+            <!-- 1 Title -->
+            <h2 class="subHeading text-black border-b-[1px] pb-5 lg:w-[90%]">Blogs</h2>
+            <!-- 2. container of all blogs -->
+            <section class="grid gap-10 sm:gap-14 md:gap-16 pb-10 xl:pb-20">
+                <!-- todo-------  1st blog -->
+                <a href="./blog.html"
+                  class="grid grid-flow-col items-center gap-2 sm:gap-3 md:items-start md:gap-5 lg:w-[90%]"
+                >
+                  <!-- ? (1) Image -->
+                  <img
+                    src="./images/laravel-blog.png"
+                    class="w-28 sm:w-48 md:w-56 lg:w-64 xl:w-72"
+                    alt="blog image"
+                  />
+                  <!-- ? (2) content section -->
+                  <section class="grid">
+                    <!-- (1)  image of creator and its name -->
+                    <div
+                      class="mb-[2px] grid grid-flow-col items-center justify-start gap-2 text-sm text-slightDark md:mb-1"
+                    >
+                      <div class="h-5 w-5 rounded-full bg-blue-500"></div>
+                      Abhiram Chandramohan
+                    </div>
+                    <!-- (2) content -->
+                    <section class="grid gap-[1px] md:gap-[2px]">
+                      <h3
+                        class="line-clamp-2 font-medium text-slightDark md:text-lg xl:text-2xl"
+                      >
+                        Obii Kriationz: Pioneering Web Development and UI/UX Design
+                        in Bangalore
+                      </h3>
+                      <p
+                        class="line-clamp-2 text-sm text-transparentDark lg:line-clamp-3 lg:text-base"
+                      >
+                        In the heart of Bangalore, a city celebrated for its
+                        technological innovation and entrepreneurial spirit, Obii
+                        Kriationz emerges as a beacon of creativity and efficiency
+                        in the web development realm. As a leading Web Development
+                        Company in Bangalore, Obii Kriationz has set a new standard
+                        for digital solutions, blending the art of design with the
+                        science of programming to create exceptional online
+                      </p>
+                    </section>
+                    <!-- (3) date and read -->
+                    <div
+                      class="mt-1 grid grid-flow-col justify-start gap-2 text-xs text-gold md:mt-2 md:gap-3 xl:text-sm"
+                    >
+                      <div>March 09, 2024</div>
+                      •
+                      <div>4 min read</div>
+                    </div>
+                  </section>
+                </a>
+                <!-- todo-------  2nd blog -->
+                <section
+                  class="grid grid-flow-col items-center gap-2 sm:gap-3 md:items-start md:gap-5 lg:w-[90%]"
+                >
+                  <!-- ? (1) Image -->
+                  <img
+                    src="./images/nextjs-blog.png"
+                    class="w-28 sm:w-48 md:w-56 lg:w-64 xl:w-72"
+                    alt="blog image"
+                  />
+                  <!-- ? (2) content section -->
+                  <section class="grid">
+                    <!-- (1)  image of creator and its name -->
+                    <div
+                      class="mb-[2px] grid grid-flow-col items-center justify-start gap-2 text-sm text-slightDark md:mb-1"
+                    >
+                      <div class="h-5 w-5 rounded-full bg-pink-400"></div>
+                      Milan Parmar
+                    </div>
+                    <!-- (2) content -->
+                    <section class="grid gap-[1px] md:gap-[2px]">
+                      <h3
+                        class="line-clamp-2 font-medium text-slightDark md:text-lg xl:text-2xl"
+                      >
+                        Maximizing SEO Potential in Next.js: A Comprehensive Guide
+                        to the Latest Version's Features
+                      </h3>
+                      <p
+                        class="line-clamp-2 text-sm text-transparentDark lg:line-clamp-3 lg:text-base"
+                      >
+                        Explore the latest SEO advancements in Next.js with our
+                        in-depth guide. Learn to harness the newest features for
+                        enhanced search engine visibility and website performance.
+                        Perfect for developers and SEO enthusiasts - built by
+                        Developers at Obii kriationz Web LLP
+                      </p>
+                    </section>
+                    <!-- (3) date and read -->
+                    <div
+                      class="mt-1 grid grid-flow-col justify-start gap-2 text-xs text-gold md:mt-2 md:gap-3 xl:text-sm"
+                    >
+                      <div>Dec 11, 2023</div>
+                      •
+                      <div>12 min read</div>
+                    </div>
+                  </section>
+                </section>
+                <!-- todo-------  3rd blog -->
+                <section
+                  class="grid grid-flow-col items-center gap-2 sm:gap-3 md:items-start md:gap-5 lg:w-[90%]"
+                >
+                  <!-- ? (1) Image -->
+                  <img
+                    src="./images/laravel-blog.png"
+                    class="w-28 sm:w-48 md:w-56 lg:w-64 xl:w-72"
+                    alt="blog image"
+                  />
+                  <!-- ? (2) content section -->
+                  <section class="grid">
+                    <!-- (1)  image of creator and its name -->
+                    <div
+                      class="mb-[2px] grid grid-flow-col items-center justify-start gap-2 text-sm text-slightDark md:mb-1"
+                    >
+                      <div class="h-5 w-5 rounded-full bg-blue-500"></div>
+                      Abhiram Chandramohan
+                    </div>
+                    <!-- (2) content -->
+                    <section class="grid gap-[1px] md:gap-[2px]">
+                      <h3
+                        class="line-clamp-2 font-medium text-slightDark md:text-lg xl:text-2xl"
+                      >
+                        Implementing User Authentication in Laravel Using Amazon
+                        Cognito
+                      </h3>
+                      <p
+                        class="line-clamp-2 text-sm text-transparentDark lg:line-clamp-3 lg:text-base"
+                      >
+                        Explore how to enhance your Laravel application's security
+                        and user experience with Amazon Cognito. Our guide covers
+                        step-by-step integration for robust user authentication, and
+                        streamlined login processes, ensuring a seamless and secure
+                        user journey.
+                      </p>
+                    </section>
+                    <!-- (3) date and read -->
+                    <div
+                      class="mt-1 grid grid-flow-col justify-start gap-2 text-xs text-gold md:mt-2 md:gap-3 xl:text-sm"
+                    >
+                      <div>Dec 20,2023</div>
+                      •
+                      <div>4 min read</div>
+                    </div>
+                  </section>
+                </section>
+                <!-- todo-------  4th blog -->
+                <section
+                  class="grid grid-flow-col items-center gap-2 sm:gap-3 md:items-start md:gap-5 lg:w-[90%]"
+                >
+                  <!-- ? (1) Image -->
+                  <img
+                    src="./images/nextjs-blog.png"
+                    class="w-28 sm:w-48 md:w-56 lg:w-64 xl:w-72"
+                    alt="blog image"
+                  />
+                  <!-- ? (2) content section -->
+                  <section class="grid">
+                    <!-- (1)  image of creator and its name -->
+                    <div
+                      class="mb-[2px] grid grid-flow-col items-center justify-start gap-2 text-sm text-slightDark md:mb-1"
+                    >
+                      <div class="h-5 w-5 rounded-full bg-amber-300"></div>
+                      Nguyen Dac Huy
+                    </div>
+                    <!-- (2) content -->
+                    <section class="grid gap-[1px] md:gap-[2px]">
+                      <h3
+                        class="line-clamp-2 font-medium text-slightDark md:text-lg xl:text-2xl"
+                      >
+                        50 must-know Laravel - Eloquent ORM functions
+                      </h3>
+                      <p
+                        class="line-clamp-2 text-sm text-transparentDark lg:line-clamp-3 lg:text-base"
+                      >
+                        Explore the essentials of Laravel's Eloquent ORM in this
+                        comprehensive guide. Dive into 50 must-know functions and
+                        understand how ORM streamlines database interactions in
+                        Laravel for efficient, clean, and maintainable code
+                        development. Perfect for beginners and seasoned developers
+                        alike.
+                      </p>
+                    </section>
+                    <!-- (3) date and read -->
+                    <div
+                      class="mt-1 grid grid-flow-col justify-start gap-2 text-xs text-gold md:mt-2 md:gap-3 xl:text-sm"
+                    >
+                      <div>Nov 23, 2023</div>
+                      •
+                      <div>9 min read</div>
+                    </div>
+                  </section>
+                </section>
+              </section>
+          </section>
+        </section>
+
+    </main>
+    <!-- ! footer -->
+    <footer-component></footer-component>
+    <!-- ! Header Script -->
+    <script src="./js/HeaderJs.js"></script>
+  </body>
+</html>

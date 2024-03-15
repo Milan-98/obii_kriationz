@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Blog</title>
+    <link rel="stylesheet" href="./output.css" />
+    <!-- Top Header -->
+    <script src="./js/HeaderComponent.js"></script>
+    <!-- Main Header -->
+    <script src="./js/TopHeader.js"></script>
+    <!-- footer -->
+    <script src="./js/FooterComponent.js"></script>
+    <!-- large-screen-capabilities-dropdown-component -->
+    <script src="./js/LgScreenCapabilitiesDropdownComponent.js"></script>
+  </head>
+  <body>
+    <!-- ! Top Header -->
+    <topheader-component></topheader-component>
+    <!-- ! Main Header -->
+    <header-component></header-component>
+    <!-- ! Large screen dropdown of our capabilities -->
+    <large-screen-capabilities-dropdown-component></large-screen-capabilities-dropdown-component>
+    <!-- ! main -->
+    <main>
+      <!-- mx -->
+      <section class="mx-3 sm:mx-auto sm:w-[80%] md:w-[70%] lg:w-[50rem]">
+        <!-- ? (1) title -->
+        <h1 class="subHeading mt-8 text-dark xl:mt-12">
+          What is HTTP and how does it Work?
+        </h1>
+        <!-- ? (2) Author -->
+        <div
+          class="mt-5 grid grid-flow-col justify-start gap-2 xl:mt-8 xl:gap-4"
+        >
+          <!-- 1. author pic -->
+          <div class="size-10 rounded-full bg-blue-400 xl:size-12"></div>
+          <!-- 2. author name and position and other data  -->
+          <div class="grid auto-rows-min text-sm xl:gap-1">
+            <div class="text-[15px] text-dark">Abhiram Chandramohan</div>
+            <div class="text-slightDark">
+              Founder & CEO Of ObiiKriationz
+              <span class="hidden sm:inline-block">•</span>
+              <br class="block sm:hidden" />
+              <span>5 min read</span> <span class="px-1">•</span>
+              <span>Sep 04, 2023</span>
+            </div>
+          </div>
+        </div>
+        <!-- ? (3) share data -->
+        <div
+          class="my-4 grid grid-flow-col items-center justify-end gap-4 border-y-[1px] border-[#f2f2f2] py-3 xl:my-5"
+        >
+          <!-- copy Link -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="copy"
+            class="w-[22px] cursor-pointer fill-transparentDark duration-300 hover:fill-slightDark"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2m0 16H8V7h11z"
+            />
+          </svg>
+          <!-- X -->
+          <a
+            href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.obiikriationz.com%2Fwhat-is-http-and-how-does-it-work&text=What+is+HTTP+and+how+does+it+work%3F"
+            title="Share to X"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-[22px] fill-transparentDark duration-300 hover:fill-slightDark"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8 2H1l8.26 11.015L1.45 22H4.1l6.388-7.349L16 22h7l-8.608-11.478L21.8 2h-2.65l-5.986 6.886zm9 18L5 4h2l12 16z"
+              />
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.obiikriationz.com%2Fwhat-is-http-and-how-does-it-work"
+            title="Share to Facebook"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 fill-transparentDark duration-300 hover:fill-slightDark"
+              viewBox="-7 -2 24 24"
+            >
+              <path
+                d="M2.046 3.865v2.748H.032v3.36h2.014v9.986H6.18V9.974h2.775s.26-1.611.386-3.373H6.197V4.303c0-.343.45-.805.896-.805h2.254V0H6.283c-4.34 0-4.237 3.363-4.237 3.865"
+              />
+            </svg>
+          </a>
+          <!-- Linked In -->
+          <a
+            href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.obiikriationz.com%2Fwhat-is-http-and-how-does-it-work&title=What+is+HTTP+and+how+does+it+work%3F&summary=Discover+the+power+of+HTTP.++Blog+talks+about+HTTP%2C+its+features%2C+components+and+more.+Learn+how+to+send+data+to+web+servers%2C+create+and+update+resources%2C+and+enhance+your+web+applications%27+functionality.+Dive+into+the+details+of+this+essential+HTTP+method+for+efficient+data+transmission"
+            title="Share to Linkedin"
+            class="mr-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-[26px] fill-transparentDark duration-300 hover:fill-slightDark"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z"
+              />
+            </svg>
+          </a>
+        </div>
+        <!-- ? (4) content Section -->
+        <section class="grid gap-2 xl:gap-[9px]">
+          <!-- Image -->
+          <img
+            src="./images/laravel-blog.png"
+            class="mx-auto my-4"
+            alt="blog post image"
+          />
+          <p>
+            HTTP stands for "Hypertext Transfer Protocol." It's a fundamental
+            protocol for communication on the World Wide Web, allowing clients
+            (such as web browsers) to request and retrieve server resources.
+            HTTP defines the rules and conventions for how data should be
+            structured and transmitted between a client and a server over the
+            Internet.
+          </p>
+          <p class="">
+            In essence, HTTP enables the exchange of hypertext, which includes
+            various types of content like text, images, videos, and links
+            commonly found on web pages. The protocol specifies how clients make
+            requests and how servers send responses. Hypertext is a system of
+            organising and linking information to allow users to navigate
+            between related pieces of content. It's a concept that underlies the
+            structure of the World Wide Web and is a fundamental part of how
+            information is presented and accessed online.
+          </p>
+          <p class="">
+            HTTP is the backbone of data exchange on the modern web. It
+            facilitates the retrieval of resources like web pages, images,
+            stylesheets, and scripts, enabling users to interact with content
+            hosted on remote servers across the internet.
+          </p>
+          <!-- h2 -->
+          <h2
+            class="mb-2 mt-3 border-b-[1px] border-[#f2f2f2] pb-2 text-3xl font-bold xl:mb-4 xl:mt-5 xl:pb-3 xl:text-[40px] xl:leading-[46px]"
+          >
+            Key features of HTTP include:
+          </h2>
+          <p class="">
+            Statelessness: Each HTTP request and response is independent,
+            meaning the server doesn't retain information about previous
+            requests from the same client. Any required state information is
+            typically managed using cookies or session tokens.
+          </p>
+          <p>
+            Client-Server Architecture: HTTP follows a client-server model,
+            where clients (such as web browsers) initiate requests for
+            resources, and servers provide those resources in response to the
+            requests.
+          </p>
+          <p>
+            Request-Response Cycle: An HTTP interaction involves a request sent
+            by a client and a response sent by a server. The request specifies
+            the action (GET, POST, etc.), the resource to be accessed, headers
+            with additional information, and sometimes a request body. The
+            server responds with a status code indicating the outcome of the
+            request, headers with metadata, and the response body containing the
+            requested resource.
+          </p>
+          <!-- h2 -->
+          <h2
+            class="mb-2 mt-3 border-b-[1px] border-[#f2f2f2] pb-2 text-3xl font-bold xl:mb-4 xl:mt-5 xl:pb-3 xl:text-[40px] xl:leading-[46px]"
+          >
+            Key Components
+          </h2>
+          <!-- h3 -->
+          <h3
+            class="mb-1 mt-2 text-2xl font-semibold xl:mb-[6px] xl:mt-3 xl:text-3xl"
+          >
+            HTTP Versions:
+          </h3>
+          <p>
+            HTTP/1.0: The initial version of HTTP, introduced in 1996. It
+            allowed for requesting and receiving resources but had limitations
+            in terms of efficiency and performance.
+          </p>
+          <p>
+            HTTP/1.1: Introduced in 1997, it brought significant improvements,
+            including persistent connections (reusing the same connection for
+            multiple requests), pipelining (sending multiple requests without
+            waiting for responses), and chunked transfer encoding (streaming
+            responses).
+          </p>
+          <p>
+            HTTP/2: Released in 2015, it focused on optimizing page loading
+            speed. It introduced multiplexing (concurrent requests and responses
+            on a single connection), header compression, and server push
+            (proactively sending resources to the client).
+          </p>
+          <p>
+            HTTP/3: Still in the process of standardization, HTTP/3 aims to
+            improve performance further by using the QUIC transport protocol.
+            QUIC reduces latency and improves reliability, especially on
+            unreliable networks.
+          </p>
+          <!-- h3  -->
+          <h3
+            class="mb-1 mt-2 text-2xl font-semibold xl:mb-[6px] xl:mt-3 xl:text-3xl"
+          >
+            HTTP Request:
+          </h3>
+          <p>
+            An HTTP request is a message a client (usually a web browser) sends
+            to a server to request a specific resource, such as a web page, an
+            image, or a file. The request contains information about the action
+            and additional details the server needs to fulfil the request.
+          </p>
+          <!-- h3  -->
+          <h3 class="mb-1 mt-2 text-2xl font-semibold xl:mb-[6px] xl:mt-3 xl:text-3xl">
+            HTTP Request Methods:
+          </h3>
+          <p>
+            In addition to the commonly used GET, POST, PUT, and DELETE methods,
+            there are other methods like HEAD (similar to GET but retrieves only
+            headers), OPTIONS (retrieves server capabilities), PATCH (partially
+            updates a resource), and more.
+          </p>
+          <!-- h3  -->
+          <h3 class="mb-1 mt-2 text-2xl font-semibold xl:mb-[6px] xl:mt-3 xl:text-3xl">
+            URL (Uniform Resource Locator):
+          </h3>
+          <p>
+            The URL specifies the location of the resource the client wants to
+            access. It includes several components:
+          </p>
+          <p>
+            <strong> Protocol:</strong> The protocol being used, such as
+            "http://" or "https://".
+            <br />
+            <strong>Domain:</strong> The domain name of the server (e.g.,
+            www.example.com).
+            <br />
+            <strong>Path:</strong> The path on the server where the resource is
+            located (e.g., /path/to/resource). <br />
+            <strong>Query Parameters:</strong> Additional data passed to the
+            server as key-value pairs after a "?" in the URL (e.g.,
+            ?param1=value1¶m2=value2).
+          </p>
+          <!-- h3 -->
+          <h3 class="mb-1 mt-2 text-2xl font-semibold xl:mb-[6px] xl:mt-3 xl:text-3xl">Headers:</h3>
+          <p>
+            Headers provide additional information about the request and can
+            include details such as:
+          </p>
+          <p>
+            <strong>User-Agent:</strong> Information about the client (browser)
+            making the request. <br />
+            <strong> Accept:</strong> The type of content the client can accept
+            (e.g., text/html, application/json). <br />
+            <strong>Authorization:</strong> Credentials or tokens for
+            authentication. <br />
+            <strong>Content-Type:</strong> For requests with a body, specifies
+            the type of data in the request body (e.g., application/json).
+            <br />
+            <strong> Cookies: </strong>Information stored on the client side and
+            sent with the request for maintaining state.
+          </p>
+          <!-- h3 -->
+          <h3 class="mb-1 mt-2 text-2xl font-semibold xl:mb-[6px] xl:mt-3 xl:text-3xl">Request Body:</h3>
+          <p>
+            Some HTTP methods (like POST and PUT) may include a request body,
+            which contains data to be sent to the server. The format of the data
+            depends on the Content-Type header. For example, it could be JSON,
+            XML, form data, or plain text.
+          </p>
+          <!-- h2 -->
+          <h2
+            class="mb-2 mt-3 border-b-[1px] border-[#f2f2f2] pb-2 text-3xl font-bold xl:mb-4 xl:mt-5 xl:pb-3 xl:text-[40px] xl:leading-[46px]"
+          >
+            HTTP Status Codes:
+          </h2>
+          <p>
+            These codes indicate the outcome of an HTTP request. They are
+            divided into five classes: <br />
+            1xx: Informational <br />
+            2xx: Success (e.g., 200 OK) <br />
+            3xx: Redirection (e.g., 301 Moved Permanently) <br />
+            4xx: Client Errors (e.g., 404 Not Found) <br />
+            5xx: Server Errors (e.g., 500 Internal Server Error)
+          </p>
+          <!-- h3 -->
+          <h3 class="mb-1 mt-2 text-2xl font-semibold xl:mb-[6px] xl:mt-3 xl:text-3xl">Headers:</h3>
+          <p>
+            HTTP headers provide metadata about the request or response. They
+            include general, request, response, and entity headers.
+          </p>
+          <p>
+            Examples include Cache-Control (caching instructions),
+            Content-Length (size of the response body), and Referer (the URL of
+            the previous page).
+          </p>
+          <!-- h3 -->
+          <h3 class="mb-1 mt-2 text-2xl font-semibold xl:mb-[6px] xl:mt-3 xl:text-3xl">
+            Cookies and Sessions:
+          </h3>
+          <p>
+            Cookies are small data stored on the client side to track user
+            state. They're often used for session management and user
+            authentication.
+          </p>
+          <p>
+            Sessions involve maintaining user-specific data on the server side
+            and associating it with a unique session identifier stored in a
+            cookie.
+          </p>
+          <!-- h3 -->
+          <h3 class="mb-1 mt-2 text-2xl font-semibold xl:mb-[6px] xl:mt-3 xl:text-3xl">Caching:</h3>
+          <p>
+            Caching improves performance by storing copies of resources on the
+            client side or intermediate servers. The cached version can be used
+            if a resource hasn't changed since the last request.
+          </p>
+          <!-- h3 -->
+          <h3 class="mb-1 mt-2 text-2xl font-semibold xl:mb-[6px] xl:mt-3 xl:text-3xl">Content Negotiation:</h3>
+          <p>
+            Content negotiation allows clients and servers to agree on the best
+            representation of a resource. It involves headers like Accept (what
+            the client can accept) and Content-Type (what the response
+            contains).
+          </p>
+          <!-- h3 -->
+          <h3 class="mb-1 mt-2 text-2xl font-semibold xl:mb-[6px] xl:mt-3 xl:text-3xl">Security and HTTPS:</h3>
+          <p>
+            HTTPS (HTTP Secure) adds a layer of encryption and security to HTTP
+            communications. It uses SSL/TLS protocols to protect data from
+            eavesdropping and tampering.
+          </p>
+          <!-- h3 -->
+          <h3 class="mb-1 mt-2 text-2xl font-semibold xl:mb-[6px] xl:mt-3 xl:text-3xl">
+            Cross-Origin Resource Sharing (CORS):
+          </h3>
+          <p>
+            CORS is a security feature that controls how web pages from
+            different origins can interact with each other. It prevents
+            unauthorized cross-origin requests.
+          </p>
+          <!-- h3 -->
+          <h3 class="mb-1 mt-2 text-2xl font-semibold xl:mb-[6px] xl:mt-3 xl:text-3xl">
+            Server-Side Technologies:
+          </h3>
+          <p>
+            On the server side, technologies like Apache, Nginx, and Microsoft
+            IIS handle incoming HTTP requests and route them to appropriate
+            resources.
+          </p>
+          <!-- h3 -->
+          <h3 class="mb-1 mt-2 text-2xl font-semibold xl:mb-[6px] xl:mt-3 xl:text-3xl">Web APIs:</h3>
+          <p>
+            Many services provide web APIs that allow developers to make HTTP
+            requests to access their resources and data. These APIs are used to
+            build various applications and services.
+          </p>
+        </section>
+        <!-- ? (5) recommended from medium -->
+        <section class="">
+          <!-- Heading -->
+          <h2
+            class="mb-10 mt-16 border-y-[1px] border-[#f2f2f2] py-4 text-2xl font-semibold text-slightDark"
+          >
+            Recommended from Obii Kriationz
+          </h2>
+          <!-- Container of All recommended blogs -->
+          <section class="grid gap-14 pb-10 sm:gap-14 md:gap-16 xl:pb-20">
+            <!-- todo-------  1st blog -->
+            <a
+              href="./blog.html"
+              class="grid grid-flow-col items-center gap-2 sm:gap-3 md:items-start md:gap-5 lg:w-[90%]"
+            >
+              <!-- ? (1) Image -->
+              <img
+                src="./images/laravel-blog.png"
+                class="w-28 sm:w-48 md:w-56 lg:w-64 xl:w-72"
+                alt="blog image"
+              />
+              <!-- ? (2) content section -->
+              <section class="grid">
+                <!-- (1)  image of creator and its name -->
+                <div
+                  class="mb-[2px] grid grid-flow-col items-center justify-start gap-2 text-sm text-slightDark md:mb-1"
+                >
+                  <div class="h-5 w-5 rounded-full bg-blue-500"></div>
+                  Abhiram Chandramohan
+                </div>
+                <!-- (2) content -->
+                <section class="grid gap-[1px] md:gap-[2px]">
+                  <h3
+                    class="line-clamp-2 font-medium text-slightDark md:text-lg xl:text-2xl"
+                  >
+                    Obii Kriationz: Pioneering Web Development and UI/UX Design
+                    in Bangalore
+                  </h3>
+                  <p
+                    class="line-clamp-2 text-sm text-transparentDark lg:line-clamp-3 lg:text-base"
+                  >
+                    In the heart of Bangalore, a city celebrated for its
+                    technological innovation and entrepreneurial spirit, Obii
+                    Kriationz emerges as a beacon of creativity and efficiency
+                    in the web development realm. As a leading Web Development
+                    Company in Bangalore, Obii Kriationz has set a new standard
+                    for digital solutions, blending the art of design with the
+                    science of programming to create exceptional online
+                  </p>
+                </section>
+                <!-- (3) date and read -->
+                <div
+                  class="mt-1 grid grid-flow-col justify-start gap-2 text-xs text-gold md:mt-2 md:gap-3 xl:text-sm"
+                >
+                  <div>March 09, 2024</div>
+                  •
+                  <div>4 min read</div>
+                </div>
+              </section>
+            </a>
+            <!-- todo-------  2nd blog -->
+            <section
+              class="grid grid-flow-col items-center gap-2 sm:gap-3 md:items-start md:gap-5 lg:w-[90%]"
+            >
+              <!-- ? (1) Image -->
+              <img
+                src="./images/nextjs-blog.png"
+                class="w-28 sm:w-48 md:w-56 lg:w-64 xl:w-72"
+                alt="blog image"
+              />
+              <!-- ? (2) content section -->
+              <section class="grid">
+                <!-- (1)  image of creator and its name -->
+                <div
+                  class="mb-[2px] grid grid-flow-col items-center justify-start gap-2 text-sm text-slightDark md:mb-1"
+                >
+                  <div class="h-5 w-5 rounded-full bg-pink-400"></div>
+                  Milan Parmar
+                </div>
+                <!-- (2) content -->
+                <section class="grid gap-[1px] md:gap-[2px]">
+                  <h3
+                    class="line-clamp-2 font-medium text-slightDark md:text-lg xl:text-2xl"
+                  >
+                    Maximizing SEO Potential in Next.js: A Comprehensive Guide
+                    to the Latest Version's Features
+                  </h3>
+                  <p
+                    class="line-clamp-2 text-sm text-transparentDark lg:line-clamp-3 lg:text-base"
+                  >
+                    Explore the latest SEO advancements in Next.js with our
+                    in-depth guide. Learn to harness the newest features for
+                    enhanced search engine visibility and website performance.
+                    Perfect for developers and SEO enthusiasts - built by
+                    Developers at Obii kriationz Web LLP
+                  </p>
+                </section>
+                <!-- (3) date and read -->
+                <div
+                  class="mt-1 grid grid-flow-col justify-start gap-2 text-xs text-gold md:mt-2 md:gap-3 xl:text-sm"
+                >
+                  <div>Dec 11, 2023</div>
+                  •
+                  <div>12 min read</div>
+                </div>
+              </section>
+            </section>
+            <!-- todo-------  3rd blog -->
+            <section
+              class="grid grid-flow-col items-center gap-2 sm:gap-3 md:items-start md:gap-5 lg:w-[90%]"
+            >
+              <!-- ? (1) Image -->
+              <img
+                src="./images/laravel-blog.png"
+                class="w-28 sm:w-48 md:w-56 lg:w-64 xl:w-72"
+                alt="blog image"
+              />
+              <!-- ? (2) content section -->
+              <section class="grid">
+                <!-- (1)  image of creator and its name -->
+                <div
+                  class="mb-[2px] grid grid-flow-col items-center justify-start gap-2 text-sm text-slightDark md:mb-1"
+                >
+                  <div class="h-5 w-5 rounded-full bg-blue-500"></div>
+                  Abhiram Chandramohan
+                </div>
+                <!-- (2) content -->
+                <section class="grid gap-[1px] md:gap-[2px]">
+                  <h3
+                    class="line-clamp-2 font-medium text-slightDark md:text-lg xl:text-2xl"
+                  >
+                    Implementing User Authentication in Laravel Using Amazon
+                    Cognito
+                  </h3>
+                  <p
+                    class="line-clamp-2 text-sm text-transparentDark lg:line-clamp-3 lg:text-base"
+                  >
+                    Explore how to enhance your Laravel application's security
+                    and user experience with Amazon Cognito. Our guide covers
+                    step-by-step integration for robust user authentication, and
+                    streamlined login processes, ensuring a seamless and secure
+                    user journey.
+                  </p>
+                </section>
+                <!-- (3) date and read -->
+                <div
+                  class="mt-1 grid grid-flow-col justify-start gap-2 text-xs text-gold md:mt-2 md:gap-3 xl:text-sm"
+                >
+                  <div>Dec 20,2023</div>
+                  •
+                  <div>4 min read</div>
+                </div>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+    <!-- ! footer -->
+    <footer-component></footer-component>
+    <!-- ! Header Script -->
+    <script src="./js/HeaderJs.js"></script>
+    <script>
+      const copy = document.getElementById("copy");
+      copy.addEventListener("click", () => {
+        navigator.clipboard.writeText(document.URL);
+      });
+    </script>
+  </body>
+</html>
