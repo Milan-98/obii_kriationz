@@ -134,3 +134,21 @@ html {
   background-size: cover;
   background-attachment: fixed;
 }
+.zigsawSolvingPeopleBgImage{
+  background: url("./images/zigsawSolvingPeople.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.manOnMountainsBgImage{
+  background: url("./images/manOnMountains.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+::-webkit-time-picker-indicator {
+  filter: invert(1);
+}
