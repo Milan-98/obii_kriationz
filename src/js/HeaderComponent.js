@@ -194,16 +194,16 @@ class HeaderComponent extends HTMLElement {
                     </div>
                     <ul class="list-inside list-decimal">
                       <li class="duration-150 hover:opacity-50">
-                        Web Development Services
+                      <a href="./web-development-services.html"> Web Development Services </a>
                       </li>
                       <li class="duration-150 hover:opacity-50">
-                        Mobile App Development services
+                      <a href="./mobileapp-development-services.html">  Mobile App Development services</a>
                       </li>
                       <li class="duration-150 hover:opacity-50">
-                        UI - UX design Services
+                     <a href="./ui-ux-development-services.html">UI - UX design Services</a> 
                       </li>
                       <li class="duration-150 hover:opacity-50">
-                        Outsourced Software Development services
+                    <a href="./software-development-company-in-bangalore.html">    Outsourced Software Development services</a>
                       </li>
                     </ul>
                   </section>

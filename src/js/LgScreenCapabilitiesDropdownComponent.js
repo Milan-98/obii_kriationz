@@ -12,13 +12,13 @@ class LgScreenCapabilitiesDropdownComponent extends HTMLElement {
         Digital Product <br />
         Development
       </li>
-      <li class="duration-300 hover:text-gold">Web Development Services</li>
+      <li class="duration-300 hover:text-gold"> <a href="./web-development-services.html"> Web Development Services </a></li>
       <li class="duration-300 hover:text-gold">
-        Mobile App Development Services
+       <a href="./mobileapp-development-services.html"> Mobile App Development Services </a>
       </li>
-      <li class="duration-300 hover:text-gold">UI - UX Design Services</li>
+      <li class="duration-300 hover:text-gold" > <a href="./ui-ux-development-services.html">UI - UX Design Services </a> </li>
       <li class="duration-300 hover:text-gold">
-        Outsourced Software Development Services
+      <a href="./software-development-company-in-bangalore.html">Outsourced Software Development Services</a>
       </li>
     </ul>
     <ul class="grid auto-rows-min gap-4">

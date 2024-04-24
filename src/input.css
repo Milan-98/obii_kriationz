@@ -146,6 +146,24 @@ html {
   background-size: cover;
   background-attachment: fixed;
 }
+.uxBgImage{
+  background: url("./images/uxbgImage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.uxBgImage2{
+  background: url("./images/uxbgImage2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.bangaluruBgImage{
+  background: url("./images/bangaluruBgImage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 ::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
