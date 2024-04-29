@@ -255,7 +255,7 @@ class HeaderComponent extends HTMLElement {
                     </div>
                     <ul class="list-inside list-decimal">
                       <li class="duration-150 hover:opacity-50">
-                        Product Management Consulting
+                        <a href="Product-Management-Consulting.html">Product Management Consulting</a>
                       </li>
                       <li class="duration-150 hover:opacity-50">
                         MVP as a Service

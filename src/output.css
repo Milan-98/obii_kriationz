@@ -745,6 +745,10 @@ video {
   pointer-events: none;
 }
 
+.static{
+  position: static;
+}
+
 .fixed{
   position: fixed;
 }
@@ -906,6 +910,10 @@ video {
 
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
 }
 
 .mt-3{
@@ -1623,6 +1631,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pt-11{
+  padding-top: 2.75rem;
+}
+
 .pt-16{
   padding-top: 4rem;
 }
@@ -1653,6 +1665,10 @@ video {
 
 .text-center{
   text-align: center;
+}
+
+.text-start{
+  text-align: start;
 }
 
 .text-end{
@@ -1705,6 +1721,10 @@ video {
 
 .font-bold{
   font-weight: 700;
+}
+
+.font-extrabold{
+  font-weight: 800;
 }
 
 .font-light{
@@ -1835,6 +1855,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#0a070e\]{
+  --tw-text-opacity: 1;
+  color: rgb(10 7 14 / var(--tw-text-opacity));
 }
 
 .opacity-20{

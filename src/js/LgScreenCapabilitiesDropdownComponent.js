@@ -33,7 +33,7 @@ class LgScreenCapabilitiesDropdownComponent extends HTMLElement {
         Offshore Development Centre
       </li>
       <li class="duration-300 hover:text-gold">Temporary Staffing</li>
-      <li class="duration-300 hover:text-gold">Technical Recruitment</li>
+      <li class="duration-300 hover:text-gold"><a href="technical-recruitment-services-india.html">Technical Recruitment</a></li>
     </ul>
     <ul class="grid auto-rows-min gap-4">
       <li class="mb-1 border-b-[1px] pb-5 text-lg font-semibold text-dark">
@@ -41,15 +41,15 @@ class LgScreenCapabilitiesDropdownComponent extends HTMLElement {
         Testing
       </li>
       <li class="duration-300 hover:text-gold">
-        Functional and Usability Testing
+        <a href="functional-usability-testing-services-india.html"> Functional and Usability Testing</a>
       </li>
       <li class="duration-300 hover:text-gold">
-        Performance and Load Testing
+       <a href="performance-testing-services-india.html"> Performance and Load Testing</a>
       </li>
-      <li class="duration-300 hover:text-gold">Manual Testing</li>
-      <li class="duration-300 hover:text-gold">Regression Testing</li>
+      <li class="duration-300 hover:text-gold"><a href="manual-testing-services-india.html">Manual Testing</a></li>
+      <li class="duration-300 hover:text-gold"><a href="regression-testing-services-india.html">Regression Testing</a></li>
       <li class="duration-300 hover:text-gold">
-        Vulnerability and Security Testing
+        <a href="vulnerability-testing-services-india.html">Vulnerability and Security Testing</a>
       </li>
     </ul>
     <ul class="grid auto-rows-min gap-4">
@@ -58,13 +58,14 @@ class LgScreenCapabilitiesDropdownComponent extends HTMLElement {
         Consultations
       </li>
       <li class="duration-300 hover:text-gold">
-        Product Management Consulting
+      <a href="Product-Management-Consulting.html">Product Management Consulting</a>
       </li>
-      <li class="duration-300 hover:text-gold">MVP as a Service</li>
+      <li class="duration-300 hover:text-gold"><a href="MVP-as-a-Service.html">MVP as a Service</a></li>
       <li class="duration-300 hover:text-gold">
-        Customer Acquisition Consulting
+        <a href="customer-acquisition-consulting-india.html">Customer Acquisition Consulting</a>
       </li>
-      <li class="duration-300 hover:text-gold">Growth Consulting</li>
+      <li class="duration-300 hover:text-gold">
+      <a href="growth-consulting-india.html">Growth Consulting</a></li>
     </ul>
     <ul class="grid auto-rows-min gap-4">
       <li class="mb-1 border-b-[1px] pb-5 text-lg font-semibold text-dark">
