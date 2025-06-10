@@ -1763,6 +1763,11 @@ video {
   letter-spacing: 0.025em;
 }
 
+.text-\[\#0a070e\]{
+  --tw-text-opacity: 1;
+  color: rgb(10 7 14 / var(--tw-text-opacity));
+}
+
 .text-\[\#1b1b1b\]{
   --tw-text-opacity: 1;
   color: rgb(27 27 27 / var(--tw-text-opacity));
@@ -1855,11 +1860,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#0a070e\]{
-  --tw-text-opacity: 1;
-  color: rgb(10 7 14 / var(--tw-text-opacity));
 }
 
 .opacity-20{
